@@ -23,6 +23,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('home' , 'HomeController@get_data');
 
+
 Route::get('employee' , 'EmployeeController@get_data');
 Route::post('employee' , 'EmployeeController@insert_data');
 

@@ -2196,6 +2196,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -3545,6 +3548,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {},
   data: function data() {
@@ -4674,8 +4680,6 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_NavbarComponents__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/NavbarComponents */ "./resources/js/components/NavbarComponents.vue");
 /* harmony import */ var _components_Login2__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Login2 */ "./resources/js/components/Login2.vue");
-//
-//
 //
 //
 //
@@ -44442,6 +44446,8 @@ var render = function() {
               }
             }
           }),
+          _vm._v(" "),
+          _c("v-app-bar-nav-icon"),
           _vm._v(" "),
           _c(
             "v-toolbar-title",
@@ -108592,8 +108598,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\smd084\Desktop\EmployeeSystem\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\Users\smd084\Desktop\EmployeeSystem\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\Users\smd084\Desktop\laravelProjects\EmployeeSystem\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\Users\smd084\Desktop\laravelProjects\EmployeeSystem\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

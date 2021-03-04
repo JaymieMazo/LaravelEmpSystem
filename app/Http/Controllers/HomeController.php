@@ -11,6 +11,7 @@ Use App\User;
 
 class HomeController extends Controller
 {   
+    
             public function get_data(){
                 $items=[];
                 $items["Company"]= Company::where('deleted_at' ,  null)->count();

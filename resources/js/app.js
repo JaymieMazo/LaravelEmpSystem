@@ -7,13 +7,13 @@
 require('./bootstrap');
 
 window.Vue = require('vue');
-import Vue from 'vue'
- import Vuetify from 'vuetify'
- import Routes from './routes'
- import store from './store'
+import Vue from 'vue';
+ import Vuetify from 'vuetify';
+ import Routes from './routes';
+ import store from './store';
  import App from './template/App';
  import myPlugins from './myPlugins';
- import HighchartsVue from 'highcharts-vue'
+ import HighchartsVue from 'highcharts-vue';
 
 
 //  import VueIziToast from 'vue-izitoast';
@@ -50,6 +50,7 @@ Vue.use(HighchartsVue);
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
+ 
 const app = new Vue({
     el: '#app',
     store,

@@ -1,10 +1,12 @@
 <template>
   <div>
 
-
     <v-app-bar color="teal" dense app dark clipped-left >
                 <v-app-bar-nav-icon @click.stop="drawer = !drawer">
                 </v-app-bar-nav-icon>
+
+                <v-app-bar-nav-icon></v-app-bar-nav-icon>
+
                 <v-toolbar-title align="center" class="ml-5"
                 style=" font-family:  Console Courier New monospace ; font-size:35px">
                   Employee Management System
@@ -33,9 +35,8 @@
 
                 
                     <v-list width="160px"  style="background-color:transparent">
-
                           <v-list-item >
-                            <v-btn > 
+                            <v-btn> 
                             <v-icon>mdi-cog</v-icon>
                             Settings
                             </v-btn>
@@ -48,13 +49,7 @@
                           </v-list-item>
                     </v-list>
             </v-menu>
-                  
-  
     </v-app-bar>
-
-
-
-
     <v-navigation-drawer 
     v-model="drawer" 
     clipped 
@@ -65,19 +60,21 @@
  <v-list>
       <v-list-item-group  >
               <template v-for='(NavItem,key) in NavItems'>
-                    <template v-if="NavItem.subLinks == null">
-                        <v-list-item  :to="NavItem.router" :key="key">
-                            
-                              <v-list-item-icon>
-                                  <v-icon>{{ NavItem.icon }}</v-icon>
-                              </v-list-item-icon>
+                  
+                   <template v-if="NavItem.subLinks == null">
+                              <v-list-item  :to="NavItem.router" :key="key">
+                                    <v-list-item-icon>
+                                        <v-icon>{{ NavItem.icon }}</v-icon>
+                                    </v-list-item-icon>
 
-                              <v-list-item-title>{{ NavItem.title }}</v-list-item-title>
-                        </v-list-item>
+                                    <v-list-item-title>{{ NavItem.title }}</v-list-item-title>
+                              </v-list-item>
                     </template>
 
+
+
                     <template v-else>
-                                <v-list-group :key="key"  :valu="false" no-action  :prepend-icon="NavItem.icon">
+                                <v-list-group :key="key"  :value="false" no-action  :prepend-icon="NavItem.icon">
                                         
                                         <template v-slot:activator>
                                               <v-list-item-content>
@@ -119,10 +116,12 @@ export default {
     return {
       drawer: true,
       NavItems: [
-        { title: "Dashboard", 
+        {
+          title: "Dashboard", 
           icon: "mdi-view-dashboard",
           router: "/" 
-          },
+        },
+
           { 
             title: "Master maintenance", 
             icon: "mdi-cog",
@@ -149,6 +148,7 @@ export default {
   updated() {},
   watch: {},
   computed: {},
+
   methods: {
     mChangeRouter(data) {
         if (this.$router.app._route.path != data) {
